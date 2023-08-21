@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "python-fastapi-graphql"
+version = "0.1.0"
+description = "basic project by fastapi-graphql"
+authors = ["zhanchao.wu <zhanchao.wu@icloud.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.101.1"
+uvicorn = { extras = ["standard"], version = "^0.23.2" }
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "keji"
+url = "https://pypi.mirrors.ustc.edu.cn/simple/"
+default = true
