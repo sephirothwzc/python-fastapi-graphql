@@ -71,4 +71,8 @@ $ poetry add ruff='*' --dev
 $ uvicorn src.python_fastapi_graphql.main:app --reload    
 # 模型类
 $ poetry add pydantic
+# pre-commit hooks
+$ poetry add pre-commit --dev
+# commitizen
+$ poetry add commitizen --dev
 ```

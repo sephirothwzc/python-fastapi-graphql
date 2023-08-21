@@ -13,6 +13,8 @@ pydantic = "^2.2.1"
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
 black = "*"
+pre-commit = "^3.3.3"
+commitizen = "^3.6.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
@@ -34,6 +36,9 @@ select = [
   "UP",  # pyupgrade  
   "S",   # bandit
 ]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
 
 # [[tool.poetry.source]]
 # name = "keji"
