@@ -1,9 +1,11 @@
-from typing import Union
+# from typing import Union
 from fastapi import FastAPI
+
+from .model.vo import HelloWord
 
 app = FastAPI()
 
 
 @app.get("/")
-def read_root():
+async def read_root() -> HelloWord:
     return {"Hello": "World"}

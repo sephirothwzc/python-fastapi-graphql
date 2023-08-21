@@ -8,6 +8,7 @@ authors = ["zhanchao.wu <zhanchao.wu@icloud.com>"]
 python = "^3.10"
 fastapi = "^0.101.1"
 uvicorn = { extras = ["standard"], version = "^0.23.2" }
+pydantic = "^2.2.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
@@ -17,7 +18,24 @@ black = "*"
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
-[[tool.poetry.source]]
-name = "keji"
-url = "https://pypi.mirrors.ustc.edu.cn/simple/"
-default = true
+[tool.ruff]
+select = [
+  "E",   # pycodestyle error
+  "W",   # pycodestyle warning
+  "F",   # pyflakes
+  "A",   # flakes8-builtins
+  "COM", # flakes8-commas
+  "C4",  # flake8-comprehensions
+  "Q",   # flake8-quotes
+  "SIM", # flake8-simplify
+  "PTH", # flake8-use-pathlib
+  "I",   # isort
+  "N",   # pep8 naming
+  "UP",  # pyupgrade  
+  "S",   # bandit
+]
+
+# [[tool.poetry.source]]
+# name = "keji"
+# url = "https://pypi.mirrors.ustc.edu.cn/simple/"
+# default = true
