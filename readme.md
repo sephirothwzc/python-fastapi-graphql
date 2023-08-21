@@ -65,7 +65,7 @@ $ poetry export --output requirements.txt
 $ poetry add fastapi "uvicorn[standard]"
 # 格式化 black='*' 开发环境配置
 $ poetry add black='*' --dev
-# linting with ruff (目前无法使用 只能用 pip3 install ruff)
+# * linting with ruff (目前无法使用 只能用 pip3 install ruff)
 $ poetry add ruff='*' --dev  
 # 运行 (创建 main.py)
 $ uvicorn src.python_fastapi_graphql.main:app --reload    
@@ -73,6 +73,6 @@ $ uvicorn src.python_fastapi_graphql.main:app --reload
 $ poetry add pydantic
 # pre-commit hooks
 $ poetry add pre-commit --dev
-# commitizen
+# * commitizen 目前有问题不能使用
 $ poetry add commitizen --dev
 ```
